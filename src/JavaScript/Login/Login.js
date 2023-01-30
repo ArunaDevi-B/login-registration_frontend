@@ -8,7 +8,7 @@ const Login = (props) => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     console.log(email, password);
-    const loginres = await fetch("http://localhost:9000/login/", {
+    const loginres = await fetch("https://login-guvi-backend.onrender.com//login/", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
